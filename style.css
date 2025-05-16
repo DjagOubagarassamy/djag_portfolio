@@ -501,9 +501,6 @@ text {
 }
 
 @media all and (max-width: 784px) {
-  * {
-    overflow-x: hidden;
-  }
   .acceuil {
     height: 30vh;
     margin: 0;
@@ -607,5 +604,8 @@ text {
   }
   #title-d {
     display: none;
+  }
+  #projet {
+    overflow-x: hidden;
   }
 }/*# sourceMappingURL=style.css.map */
