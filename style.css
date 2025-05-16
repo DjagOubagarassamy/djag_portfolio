@@ -20,9 +20,10 @@
 }
 
 body {
-  font-family: "MonumentExtended-Regular", sans-serif;
+  font-family: "Kraft Mono", sans-serif;
   background-color: var(--g);
   overflow-x: hidden;
+  font-weight: 500;
 }
 
 .loader-wrap {
@@ -203,7 +204,7 @@ text {
   position: absolute;
   font-family: "MonumentExtended-Regular", sans-serif;
   font-size: 10rem;
-  font-weight: 500;
+  font-weight: 700;
   opacity: 0.4;
 }
 
