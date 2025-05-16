@@ -39,7 +39,7 @@ body {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: var(--g);
     z-index: 100;
     transition: all ease 0.5s;
@@ -64,7 +64,7 @@ body {
     z-index: 10;
     position: relative;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     padding: 0 3rem;
     background-color: transparent;
 }
@@ -91,7 +91,7 @@ img {
 .acceuil {
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -124,7 +124,7 @@ img {
 
 .nom svg {
     position: relative;
-    width: 80vw;
+    width: 80%;
 }
 
 .nom svg text {
@@ -208,7 +208,7 @@ to {
     position: relative;
     display: flex;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .droite {

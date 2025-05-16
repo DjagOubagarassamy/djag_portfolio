@@ -20,10 +20,9 @@
 }
 
 body {
-  font-family: "Kraft Mono", sans-serif;
+  font-family: "MonumentExtended-Regular", sans-serif;
   background-color: var(--g);
   overflow-x: hidden;
-  font-weight: 500;
 }
 
 .loader-wrap {
@@ -69,7 +68,7 @@ body {
   }
 }
 .nav {
-  z-index: 100;
+  z-index: 10;
   position: relative;
   height: 10vh;
   width: 100vw;
@@ -204,7 +203,7 @@ text {
   position: absolute;
   font-family: "MonumentExtended-Regular", sans-serif;
   font-size: 10rem;
-  font-weight: 700;
+  font-weight: 500;
   opacity: 0.4;
 }
 
@@ -502,6 +501,9 @@ text {
 }
 
 @media all and (max-width: 784px) {
+  body {
+    overflow-x: hidden;
+  }
   .acceuil {
     height: 30vh;
     margin: 0;
