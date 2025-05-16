@@ -1,0 +1,621 @@
+@import url(font.css);
+
+:root {
+    --a: #D93240;
+    --b: #2A3140;
+    --g: #0F5B8C;
+    --h: #fdfeff;
+    --c: #4283ad;
+    --d: #111;
+    --i: #F2F3D9;
+    --k: #f2f3d97e;
+    --j: #8D99AE;
+    --e: rgba(0, 0, 0, 0.5);
+}
+
+// Html Début 
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--i);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'MonumentExtended-Regular', sans-serif;
+    background-color: var(--g);
+    overflow-x: hidden;
+}
+// Html Fin
+
+// Loader Début 
+
+.loader-wrap {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--g);
+    z-index: 100;
+    transition: all ease 0.5s;
+}
+
+.loader {
+    border: 16px solid var(--i); /* Light grey */
+    border-top: 16px solid var(--d); /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    scale: 0.4;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+// Navbar Début
+.nav {
+    z-index: 10;
+    position: relative;
+    height: 10vh;
+    width: 100vw;
+    padding: 0 3rem;
+    background-color: transparent;
+}
+
+.icons {
+    display: flex;
+    align-items: flex-start;
+}
+img {
+    height: 40px;
+    width: 40px;
+}
+
+.icon {
+    margin: 10px;
+    padding:5px 5px 0px 5px;
+    border-radius: 100%;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+// Navar Fin
+// Acceuil Début
+
+.acceuil {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+#titres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'MonumentExtended-Ultrabold', sans-serif;
+    height: 100%;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+.nom {
+    position: relative;
+    bottom: 1rem;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nom svg {
+    position: relative;
+    width: 80vw;
+}
+
+.nom svg text {
+    font-size: 6rem;
+    stroke: var(--i);
+    stroke-width: 1.5px;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    fill: var(--e);
+    animation: dash 3s ease-out alternate infinite;
+    text-shadow: 0 0 3em var(--g);
+}
+
+text {
+    fill: var(--i);
+}
+
+@keyframes dash {
+from {
+    stroke-dashoffset: 500;
+}
+to {
+    stroke-dashoffset: 100;
+}
+}
+
+
+.libelle {
+    position: relative;
+    height: 120px;
+    width: 95%;
+    color: var(--i);
+}
+
+.libelle svg {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--i);
+    width: 90vw;
+}
+.libelle svg text {
+    font-size: 3.5rem;
+    fill: var(--i);
+}
+
+.liberes {
+    display: none;
+}
+// Acceuil Fin
+
+// About Debut
+
+.about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+#title-a {
+    position: absolute;
+    font-family: 'MonumentExtended-Regular', sans-serif;
+    font-size: 10rem;
+    font-weight: 500;
+    opacity: 0.4;
+}
+
+.about .txt {
+    margin: 5rem 20rem;
+    font-size: 1.5rem;
+}
+
+// About Fin
+
+// Projet Template Début
+
+.projet {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.droite {
+    position: relative;
+    order: 2;
+    width: 50%;
+    height: 100%;
+    padding-top: 40vh;
+    z-index: 15;
+}
+
+.gauche {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    z-index: 14;
+
+// Gauche Début 
+
+}
+.numero {
+    font-size: 2rem;
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+}
+
+.titre {
+    position: relative;
+    font-size: 4rem;
+    left: 3rem;
+    margin-bottom: 1rem;
+}
+.skills {
+    position: relative;
+    left: 3rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--k);
+    overflow-x: visible;
+}
+.desc {
+    position: relative;
+    left: 3rem;
+    font-size: 1.5rem;
+}
+
+.type {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    font-family: 'MonumentExtended-Ultrabold', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.numero , .titre , .skills , .desc , .type {
+    overflow-y: hidden;
+}
+
+
+// Droite Début 
+
+.pc img{
+    width: 520px;
+    height: 325px;
+}
+.pc {
+    position: absolute;
+}
+
+.mobile img {
+    width: 175px;
+    height: 350px;
+}
+.mobile {
+    overflow: visible;
+    position: absolute;
+}
+
+.one {
+    z-index: 10;
+}
+.two {
+    z-index: 9;
+}
+.three {
+    z-index: 8;
+}
+// #bigo2-1 {
+//     margin: 20rem 0rem 0rem 12rem;
+// }
+
+// Projet 1
+
+#pc1 {
+    left: 5vw;
+    scale: 1.2;
+}
+
+#bigo1 {
+    left: 8vw;
+    scale: 1.6;
+}
+
+#bigo2 {
+    right: 5vw;
+    scale: 1.3;
+}
+
+#bigo3 {
+    right: 10vw;
+}
+// Projet 2 
+
+.numero2 {
+    top: 350px;
+}
+
+#pc2-1 {
+    left: 6vw;
+    scale: 1.1;
+    z-index: 11;
+}
+
+#pc2-2 {
+    bottom: 8vh;
+    right: 2vw;
+    z-index: 10;
+    scale: 0.95;
+}
+
+#bigo2-1 {
+    z-index: 13;
+    left: 10vw;
+    bottom: 0vh;
+    scale: 1.55;
+}
+
+#bigo2-2 {
+    z-index: 14;
+    right: 10vw;
+    scale: 1.3;
+}
+
+// Projet 3
+.numero3 {
+    top: 400px;
+}
+
+#bigo3-1 {
+    left: 8vw;
+    scale: 1.3;
+}
+
+#bigo3-2 {
+    right: 8vw;
+    scale: 1.4;
+}
+
+#bigo3-3 {
+    left: 12vw;
+}
+
+// Projet 4
+.numero4  {
+    top: 400px;
+}
+
+.numero4 .droite {
+    top: 100px
+}
+
+#pc4-1 {
+    left: 3vw;
+    scale: 1.2;
+}
+#pc4-2 {
+    right: 3vw;
+}
+// Skills 
+
+.all-skills {
+position: relative;
+top: 170vh;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(6, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+font-size: 2rem;
+}
+
+.front { grid-area: 1 / 1 / 4 / 4;
+    margin: 5rem;
+    margin-left: 17rem;
+    }
+.back { grid-area: 1 / 4 / 4 / 7; 
+    margin: 5rem;
+}
+.front-name { grid-area: 4 / 1 / 6 / 4;
+    margin: 1rem 5rem ;
+    margin-left: 17rem;
+
+}
+.back-name { grid-area: 4 / 4 / 6 / 7; 
+    margin: 1rem 5rem ;
+}
+.others { grid-area: 6 / 1 / 8 / 7; 
+    margin: 2rem;
+    margin-left: 17rem;
+
+}
+
+#title-c {
+    right: 18%;
+    grid-area: 1 / 1 / 6 / 4; }
+
+#title-d { 
+    right: 46%;
+grid-area: 1 / 4 / 6 / 7; }
+
+#title-d, #title-c {
+    font-size: 3rem;
+    top: 50%;
+    position: absolute;
+}
+
+
+#title-b {
+        position: absolute;
+        font-family: 'MonumentExtended-Regular', sans-serif;
+        font-size: 10rem;
+        font-weight: 500;
+        opacity: 0.4;
+}
+
+// Contact Section
+
+.contact {
+    position: relative;
+    top: 200vh;
+    z-index: 17;
+}
+
+#title-e {
+    position: absolute;
+    font-family: 'MonumentExtended-Regular', sans-serif;
+    font-size: 10rem;
+    font-weight: 500;
+    opacity: 0.4;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list div {
+    margin: 4rem 5rem;
+    scale: 2;
+    cursor: pointer;
+}
+
+.linkedin {
+    z-index: 20;
+}
+
+// Kebab
+
+.kebab {
+    position: relative;
+    top: 350vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+// Responsive 
+
+@media all and (max-width: 784px) {
+    .acceuil {
+        height: 30vh;
+        margin: 0;
+    }
+    
+
+    .libelle {
+        display: none;
+    }
+    .about {
+        margin-bottom: 0vh;
+    }
+    .about .txt {
+        margin: 1rem;
+    }
+    .droite {
+        scale: 0.6;
+        position: absolute;
+    }
+
+    .numero {
+        font-size: 2rem;
+        position: absolute;
+        top: 0rem;
+        left: 2rem;
+    }
+    .nom svg {
+        width: 400px;
+        scale: 0.6;
+    }
+
+    
+    .titre {
+        left: 0;
+        right: 0;
+        width: 100vw;
+        font-size: 1.5rem;
+        top: 5vh;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+    }
+    .skills {
+        top: 7vh;
+        width: 100vw;
+        font-size: 1rem;
+        font-style: italic;
+        color: var(--k);
+        overflow-x: visible;
+        height: 200px;
+    }
+    .desc {
+        top: 13vh;
+        width: 100vw;
+        font-size: 1rem;
+    }
+    
+    .type {
+        position: absolute;
+        top: 40vh;
+        right: -25vh;
+        font-family: 'MonumentExtended-Ultrabold', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+    }
+    
+    .numero , .titre , .skills , .desc , .type {
+        overflow-y: hidden;
+        position: absolute;
+        scale: 0.8;
+        left: 3%;
+    }
+
+    #bigo1 {
+        left: 80vw;
+    }
+    
+    #bigo3 {
+        left: 10vw;
+    }
+
+    #bigo2-1 {
+        left: 80vw;
+    }
+
+    #pc2-1 {
+        scale: 1;
+        left: 0;
+    }
+
+    #bigo3-2 {
+        left: 70vw;
+    }
+
+    #pc4-2 {
+        left: 10vw;
+    }
+
+    .all-skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .front, .front-name, .back, .back-name, .others {
+        margin: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .front-name {
+        margin-bottom: 9rem;
+    }
+    #title-c {
+        color: var(--j);
+        top: -3vh;
+        font-size: 2rem;
+    }
+    #title-d {
+        display: none;
+    }
+}
