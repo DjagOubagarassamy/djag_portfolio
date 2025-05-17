@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
     <section id="projects" className="py-20 bg-black text-white">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4" data-aos="fade-up">My Projects</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4" data-aos="fade-up">Projets</h2>
           <div className="w-16 h-1 bg-purple-500 mx-auto mb-6" data-aos="fade-up"></div>
           <p className="text-gray-300 max-w-2xl mx-auto" data-aos="fade-up">
             Voici les projets sur lesquels j'ai travaillé et qui m'ont demandé le plus de temps. Ils reflètent mes compétences et ma passion pour le développement web.

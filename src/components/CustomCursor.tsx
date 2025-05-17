@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from 'react';
 
+const isMobile = () =>
+  typeof window !== 'undefined' &&
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
 const CustomCursor: React.FC = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const [isDown, setIsDown] = useState(false);
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
+     if (isMobile()) {
+      setShow(false);
+      return;
+    }
     // 1. Cacher le curseur natif partout via une règle CSS globale
     const styleEl = document.createElement('style');
     styleEl.id = 'hide-native-cursor';

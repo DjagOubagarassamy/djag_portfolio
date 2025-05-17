@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <div className="text-center md:text-right text-gray-400 text-sm">
             <p>&copy; {currentYear} Djag Oubagarassamy. All rights reserved.</p>
             <p className="mt-1">
-              Conçue avec présision et passion
+              Conçue avec précision et passion
             </p>
           </div>
         </div>
